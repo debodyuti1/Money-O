@@ -6,16 +6,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/navbar/navbar.component';
 import Footer from './components/Footer/Footer';
 import LandingPage from './pages/LandingPage/landing.page';
+import KommunicateChat from './chat';
 
 function App() {
   return (
    <>
+      <KommunicateChat />
       <Router>
       <div className="App">
       <NavBar />
       <Switch>
       <Route exact path = '/'>
       <LandingPage />
+      
       </Route>
       <Route exact path = '/MoneyO'>
       <HomePage />

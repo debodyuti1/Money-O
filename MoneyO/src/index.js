@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Kommunicate from '@kommunicate/kommunicate-chatbot-plugin';
+
+Kommunicate.init("eebfeaf7429eb2570d023ebcffa557ea" , {"popupWidget" : true , "automaticChatOpenOnNavigation":true})
 
 ReactDOM.render(
   <React.StrictMode>
