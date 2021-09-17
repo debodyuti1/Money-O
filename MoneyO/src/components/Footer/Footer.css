@@ -1,0 +1,24 @@
+.FooterContainer{
+    background: #1D1A36;
+    color: white;
+    text-align: center;
+    padding: 5% 10%;
+}
+
+.FooterTitle{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.FooterSubTitle{
+    margin: 5%;
+    font-size: 2rem;
+}
+
+.socialMedia{
+    margin: 3% 0%;
+}
+
+.MadeWith{
+    font-size: 2rem;
+}
