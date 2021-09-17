@@ -6,7 +6,7 @@
 
 .LandingPageBody{
     padding: 3% 15%;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 
@@ -39,7 +39,7 @@
     position: absolute;
     width: 100%;
     left: 0;
-    top: 29%;
+    top: 22%;
 }
 
 
@@ -80,6 +80,6 @@
     font-weight: 600;
 }
 
-.HomeBannerPageTitle{
+.HomeBannerPageBody{
     font-weight: normal;
 }

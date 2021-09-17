@@ -6,3 +6,12 @@
     font-size:2rem;
     font-weight: 600;
 }
+
+.small{
+    padding: 1% 5%;
+    color: #000;
+    border: #000 2px none;
+    border-radius: 25px;
+    font-size:2rem;
+    font-weight: 600;
+}

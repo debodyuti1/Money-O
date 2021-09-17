@@ -2,9 +2,7 @@ import './Button.css'
 
 const Button = ({children, large, small}) => {
     return(
-        <div>
-            <button href="/MoneyO" className={`large`}>{children}</button>
-        </div>
+            <button href="http://localhost:3000/MoneyO" className={`${large?'large': ''} ${small?'small': '' }  `}>{children}</button>
     )
 }
 

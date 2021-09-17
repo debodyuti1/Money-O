@@ -18,7 +18,6 @@ function App() {
       <Switch>
       <Route exact path = '/'>
       <LandingPage />
-      
       </Route>
       <Route exact path = '/MoneyO'>
       <HomePage />

@@ -5,10 +5,19 @@
  
   font-family: 'Ubuntu', sans-serif;
   overflow-x: hidden;
-  scrollbar-width: none;
-  &::-webkit-scrollbar{
-    display: none;
-}
+  ::-webkit-scrollbar {
+    width: 10px;
+  }  
+  ::-webkit-scrollbar-track {
+    background: #5A5589;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #3B3763;
+  }
+    ::-webkit-scrollbar-thumb:hover {
+    background: #3B3763;
+  }
 }
 
 
