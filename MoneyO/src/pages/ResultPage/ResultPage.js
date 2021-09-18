@@ -1,5 +1,6 @@
 import React,{useEffect, useState} from 'react';
 import axios from 'axios';
+import { Card } from 'antd';
 
 export default function ResultPage() {
 
@@ -30,13 +31,19 @@ export default function ResultPage() {
     return (
         <div>
             <h1>THis is the results page</h1>
+
+            <div className="row p-2" >
             {inputs && inputs.map((input, index) => 
                 (
-                    <div >
-                        <h1>This is {index+1} data set {input.Ower}</h1>
-                    </div>
+                    <Card title="Default size card" style={{ width: 300 }}>
+                    <p>This is the Ower: {input.Ower}</p>
+                    <p>Amount: {input.Owner}</p>
+                    <p>This is the Owner: {input.Owner}</p>
+                    </Card>
                 )
             )}
+            </div>
+           
             {/* {data} */}
         </div>
     )
