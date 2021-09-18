@@ -2,6 +2,12 @@ const mongoose = require("mongoose")
 
 const UserSchema = new mongoose.Schema(
     {
+      fullname:{
+        type: String,
+        require:true,
+        min:1,
+        max:30
+      },
       username: {
         type: String,
         require: true,
@@ -32,15 +38,20 @@ const UserSchema = new mongoose.Schema(
         type: Boolean,
         default: false,
       },
-      city: {
-        type: String,
-        max: 50,
-        default:""
-      },
       from: {
         type: String,
         max: 50,
-      }
+      },
+      pastTransactions:[{
+        amount: {
+          type: Number,
+          default: ""
+        },
+        Owner: {
+          type: String,
+          default: ""
+        }
+      }]
     }
 )
   

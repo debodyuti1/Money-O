@@ -5,26 +5,27 @@
 }
 
 .LandingPageBody{
-    padding: 3% 15%;
+    padding: 3% 10%;
     margin-top: 5%;
 }
 
 
 .HomePageTitle{
-    font-weight: 500;
+    font-weight: 600;
     font-size: 3rem;
 }
 
 .homePageImage{
     border: #fff 19px black;
     border-radius: 25px;
-    padding-left: 5%;
-    width: 100%;
+    width: 90%;
     height: auto;
 }
 
 .HomePageBody{
     text-align: left;
+    font-size: 1.2rem;
+
 }
 
 .LandingPageHeroText{
@@ -42,17 +43,8 @@
     top: 22%;
 }
 
-
-
-@media only screen and (max-width: 768px) {
-    [class*="homePageImage"] {
-        width: 90%;
-        margin: 6% 0%; 
-    }
-} 
-
 .HomePageFeatures{
-    background: #3B3763;;
+    background: #3B3763;
     padding: 5% 15%;
     color: white;
 }
@@ -68,6 +60,7 @@
 
 .FeaturesTextBody{
     font-weight: normal;
+    font-size: 1.2rem;
 }
 
 .homeBanner{
@@ -83,3 +76,75 @@
 .HomeBannerPageBody{
     font-weight: normal;
 }
+
+
+
+@media only screen and (max-width: 768px) {
+    [class*="homePageImage"] {
+        width: 100%;
+        text-align: left;
+        margin: 6% 0%; 
+    }
+} 
+@media only screen and (max-width: 768px) {
+    [class*="HomePageTitle"] {
+        font-size: 2.2rem;
+
+    }
+} 
+
+@media only screen and (max-width: 768px) {
+    [class*="FeaturesImage"] {
+        width: 95%;
+        margin: 6% 0%; 
+    }
+} 
+@media only screen and (max-width: 768px) {
+    [class*="FeaturesImage"] {
+        width: 95%;
+        margin: 6% 0%; 
+    }
+} 
+@media only screen and (max-width: 768px) {
+    [class*="TrackingImage"] {
+        width: 90%;
+        margin: 6% 0%;
+        margin-top: 10%;
+        margin-bottom: 20%; 
+    }
+} 
+@media only screen and (max-width: 768px) {
+    [class*="HomeBannerPageTitle"] {
+        
+        font-size: 1.5rem;
+        padding-bottom: 30px;
+    }
+} 
+@media only screen and (max-width: 768px) {
+    [class*="ButtonLarge"] {
+        
+        margin-top: 2%;
+
+        
+    }
+} 
+@media only screen and (max-width: 768px) {
+    [class*="FeaturesTitle"] {
+        
+        font-size: 1.8rem;
+
+        
+    }
+} 
+@media only screen and (max-width: 768px) {
+    [class*="FeaturesTextBody"] {
+        
+        font-size: 1rem;
+
+        
+    }
+} 
+
+
+
+
