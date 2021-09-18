@@ -1,11 +1,9 @@
-import { useContext } from "react";
-import { TransactionContext } from "../context/TransactionContext/TransactionContext";
+import Load from  '../components/Loader/PaymentSuccess/PaymentSuccess'
 
 function Test(){
-    const {details:details} = useContext(TransactionContext)
     return(
         <div>
-            {details}
+            <Load />
         </div>
     )
 }

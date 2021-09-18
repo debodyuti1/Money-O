@@ -1,0 +1,27 @@
+.signUpPage{
+    background: #3B3763;
+    padding: 5% 15%;
+    color: rgb(3, 3, 3);
+}
+
+.signUpContainer{
+    background: #5A5589;
+    padding: 5% 10%;
+    text-align: left
+}
+
+.SignUpTitle{
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+}
+
+.SignUpFields{
+    width: 100%;
+    margin: 2% 0%;
+    padding: 5%;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background: #68629E;
+}
