@@ -7,6 +7,8 @@ import NavBar from './components/navbar/navbar.component';
 import Footer from './components/Footer/Footer';
 import LandingPage from './pages/LandingPage/landing.page';
 import ProfilePage from './pages/ProfilePage/ProfilePage';
+import SignUp from './pages/signUpPage/signIp';
+import SignIn from './pages/signInPage/signIn';
 import KommunicateChat from './chat';
 
 function App() {
@@ -22,6 +24,12 @@ function App() {
       </Route>
       <Route exact path = '/MoneyO'>
       <HomePage />
+      </Route>
+      <Route exact path = '/signup'>
+      <SignUp />
+      </Route>
+      <Route exact path = '/newuser'>
+      <SignIn />
       </Route>
       <Route exact path = '/testing'>
       <Testing />
