@@ -1,16 +1,6 @@
 const router = require("express").Router();
+const Calculated = require("../models/algo");
 
-// router.get("/" ,async (req,res)=>{
-//     try {
-//         const data = await req.body;
-//         console.log("this is the data from endpoint", data);
-//     } catch (err) {
-//         console.log(err);
-//     }
-
-//     res.send("welcome to this endpoint");
-
-// });
 
 router.post("/", async (req, res) => {
   const result = [];
@@ -75,7 +65,32 @@ router.post("/", async (req, res) => {
     console.log(err);
   }
 
-  res.send(result);
+
+const newCalculated = new Calculated({
+    // ...result,
+    resultValues: result,
+    // createdAt: createdAt || new Date().toISOString(),
+
 });
+console.log("this is the newCalculated", newCalculated);
+console.log("this is the result ====>", result);
+try{
+    await newCalculated.save();
+    res.send(result);
+    res.status(201).json(newCalculated);
+}catch(err) {
+    res.status(409).json({ message: error.message});
+}
+  
+});
+
+router.get('/', async(req,res) => {
+    const calculated = await Calculated.find().sort({ _id: -1 });
+  try {
+    res.status(201).json(calculated);
+  } catch (error) {
+    res.status(409).json({ message: error.message });
+  }
+})
 
 module.exports = router;

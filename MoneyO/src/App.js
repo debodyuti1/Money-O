@@ -7,6 +7,7 @@ import NavBar from './components/navbar/navbar.component';
 import Footer from './components/Footer/Footer';
 import LandingPage from './pages/LandingPage/landing.page';
 import ProfilePage from './pages/ProfilePage/ProfilePage';
+import ResultPage from './pages/ResultPage/ResultPage';
 import KommunicateChat from './chat';
 
 function App() {
@@ -28,6 +29,9 @@ function App() {
       </Route>
       <Route exact path = '/myprofile'>
       <ProfilePage />
+      </Route>
+      <Route exact path="/Results">
+        <ResultPage />
       </Route>
       </Switch>
       <Footer />
