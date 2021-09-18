@@ -2,6 +2,8 @@ const express = require("express")
 const morgan = require("morgan")
 const mongoose = require("mongoose")
 const dotenv = require("dotenv")
+const userRoute = require("./routes/users")
+const authRoute = require("./routes/auth")
 const helmet = require("helmet")
 const cors = require("cors")
 const app = express()
@@ -10,14 +12,20 @@ const path = require("path")
 
 dotenv.config()
 
-mongoose.connect("mongodb+srv://admin:qsvQjmPPnADSp83d@pawhelper.5qct4.mongodb.net/moneyO", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-});
+mongoose.connect(process.env.MONGO_URL,
+  {useNewUrlParser:true , useUnifiedTopology: true},
+  () => {console.log("Connected to Mongo");})
 
 
-app.use("/images", express.static(path.join(__dirname , "/public/images")))
 app.use(express.json());
 app.use(helmet())
 app.use(cors())
 app.use(morgan('tiny'))
+
+
+
+app.use('/api/users' , userRoute)
+app.use('/api/auth' , authRoute)
+
+
+app.listen(5000, () => {console.log("~~~~ Server Started ~~~~");})

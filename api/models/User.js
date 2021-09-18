@@ -35,6 +35,7 @@ const UserSchema = new mongoose.Schema(
       city: {
         type: String,
         max: 50,
+        default:""
       },
       from: {
         type: String,
