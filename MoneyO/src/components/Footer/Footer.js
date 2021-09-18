@@ -8,7 +8,7 @@ const Footer = () => {
             <span className="FooterTitle" >MoneyO</span><br/>
             <span className="FooterSubTitle">MoneyO Copyright 2021</span><br />
            <div className="socialMedia">
-           <img className="cicleImg" src={circle} /> <img className="cicleImg" src={circle} /> <img className="cicleImg" src={circle} /> <img className="cicleImg" src={circle} /> <img  className="cicleImg" src={circle} /> 
+           <img alt="circle" className="cicleImg" src={circle} /> <img alt="circle" className="cicleImg" src={circle} /> <img alt="circle" className="cicleImg" src={circle} /> <img alt="circle" className="cicleImg" src={circle} /> <img alt="circle" className="cicleImg" src={circle} /> 
            </div><br/>
             <span className="MadeWith">Made with ♡ by Team Unfinished</span>
         </div>

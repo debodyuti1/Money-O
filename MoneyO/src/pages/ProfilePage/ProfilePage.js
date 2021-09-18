@@ -12,7 +12,7 @@ const ProfilePage = () => {
            <div className=" row">
             <div className=" col-lg-6">
                 <div className="ProfilePageLeft">
-                <img className="ProfilePicture" src={DefaultImage} />
+                <img alt= "defaultImage" className="ProfilePicture" src={DefaultImage} />
                 </div>
             </div>
            </div>
