@@ -37,11 +37,19 @@ const ProfilePage = () => {
             </div>
             <div className="col-lg-9">
                 <div className="ProfilePageRight">
-                    <span>Past Transactions</span>
-                    <div className="BodyProfile">
-                    <input className="inputComponent" />
+                    <span className="PastTransactionsTitle">Past Transactions</span>
+                    <div className="TransactionLogs">
+                    <span className="TransactionsName"> Advaita Anand</span>
+                    <span className="TransactionsPrice" > -Rs. 100</span>
                 </div>
-                <img alt= "defaultImage" className="ProfilePicture" src={DefaultImage} />
+                <div className="TransactionLogs">
+                    <span className="TransactionsName"> Advaita Anand</span>
+                    <span className="TransactionsPrice" > -Rs. 100</span>
+                </div>
+                <div className="TransactionLogs">
+                    <span className="TransactionsName"> Advaita Anand</span>
+                    <span className="TransactionsPrice" > -Rs. 100</span>
+                </div>
                 </div>
             </div>
            </div>
