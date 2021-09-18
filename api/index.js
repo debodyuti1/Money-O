@@ -3,7 +3,8 @@ const morgan = require("morgan")
 const mongoose = require("mongoose")
 const dotenv = require("dotenv")
 const userRoute = require("./routes/users")
-const authRoute = require("./routes/auth")
+const authRoute = require("./routes/auth");
+const algoRoute = require("./routes/algo");
 const helmet = require("helmet")
 const cors = require("cors")
 const app = express()
@@ -19,13 +20,15 @@ mongoose.connect(process.env.MONGO_URL,
 
 app.use(express.json());
 app.use(helmet())
-app.use(cors())
+app.use(cors());
+
 app.use(morgan('tiny'))
 
 
 
-app.use('/api/users' , userRoute)
-app.use('/api/auth' , authRoute)
+app.use('/api/users' , userRoute);
+app.use('/api/auth' , authRoute);
+app.use('/api/algo', algoRoute);
 
 
 app.listen(5000, () => {console.log("~~~~ Server Started ~~~~");})

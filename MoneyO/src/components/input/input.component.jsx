@@ -1,11 +1,14 @@
 import './input.styles.scss';
 import {DeleteFilled, UserAddOutlined } from '@ant-design/icons';
 import {Button} from 'antd';
-import { useState } from 'react';
-import { TransactionContext } from '../../context/TransactionContext/TransactionContext'
+import { useState,useEffect } from 'react';
+import { TransactionContext } from '../../context/TransactionContext/TransactionContext';
+import axios from 'axios';
 
 
 const Input = () =>{
+
+  
 
   const [inputs, setInputs] = useState([
     { Ower: '', Amount: '', Owner: ''},
@@ -23,6 +26,10 @@ const Input = () =>{
     e.preventDefault();
   }
 
+  // useEffect(() => {
+    
+  // }, [inputs]);
+
 
   const handleAdd =() => {
    setInputs([...inputs, { Owner: '', Amount: '', Owner: ''}])
@@ -31,6 +38,12 @@ const Input = () =>{
   const handleSubmit =(e) => {
     e.preventDefault();
     console.log("Inputs==>>", inputs);
+    const response = axios.post(`http://localhost:5000/api/algo/`, inputs)
+    .then(response => console.log("this is the response Id",response.data.id))
+    .catch(error => {
+      
+      console.error('There was an error! handle it', error);
+  });
   }
 
   const handleDelete =(index) => {
