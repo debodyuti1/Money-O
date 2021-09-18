@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/navbar/navbar.component';
 import Footer from './components/Footer/Footer';
 import LandingPage from './pages/LandingPage/landing.page';
+import ProfilePage from './pages/ProfilePage/ProfilePage';
 import KommunicateChat from './chat';
 
 function App() {
@@ -24,6 +25,9 @@ function App() {
       </Route>
       <Route exact path = '/testing'>
       <Testing />
+      </Route>
+      <Route exact path = '/myprofile'>
+      <ProfilePage />
       </Route>
       </Switch>
       <Footer />
