@@ -9,41 +9,9 @@
     font-weight: 600;
 }
 
-
 .ProfilePageLeft{
-    background: url("../../assets/ProfilePage/RectangleOne.png");
-    background-repeat: no-repeat;
-    padding: 7%;
-    text-align: center;
-}
-
-.ProfilePageRight{
-    background: url("../../assets/ProfilePage/RectangleTwo.png");
-    background-repeat: no-repeat;
-    padding: 7%;
-    width: 100%;
-    text-align: center;
-}
-
-.Pen{
-    text-align: right;
-}
-.BodyProfile{
-    text-align: left;
-}
-
-.ProfilePageText{
-    font-weight: 400;
-}
-
-.inputComponent{
-    width: 50%;
-    background: #68629E;
-    border: white 2px none;
-    border-radius: 10px;
-    padding: 2%;
-}
-
-.profileButton{
-    margin: 4%;
+   background: url("../../assets/ProfilePage/RectangleOne.png");
+   background-repeat: no-repeat;
+   padding: 4%;
+   align-items: center;
 }
