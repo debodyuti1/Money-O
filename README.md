@@ -34,7 +34,10 @@ https://github.com/debodyuti1/Money-O.git
 
 This Command  will copy the project to your local environment
 	
-
+## Instructions to Run
+Run <strong> npm install </strong> in api and MoneyO folder <br>
+Once completed <strong> use node index.js </strong> in api/ start the server <br>
+<strong> npm start </strong> in MoneyO folder to run the React app
 
 ## Database
 
