@@ -77,9 +77,9 @@ console.log("this is the result ====>", result);
 try{
     await newCalculated.save();
     res.send(result);
-    res.status(201).json(newCalculated);
+    // res.status(201).json(newCalculated);
 }catch(err) {
-    res.status(409).json({ message: error.message});
+    res.status(409).json({ message: err.message});
 }
   
 });

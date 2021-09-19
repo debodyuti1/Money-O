@@ -31,7 +31,7 @@ const Input = () => {
     e.preventDefault();
     console.log("Inputs==>>", inputs);
     const response = axios
-      .post(`http://localhost:5000/api/algo/`, inputs)
+      .post(`/algo/`, inputs)
       .then((response) =>
         console.log("this is the response Id", response.data.id)
       )

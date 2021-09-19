@@ -13,7 +13,7 @@ export default function ResultPage() {
       useEffect(() =>{
         const fetchData = async() => {
             await axios
-            .get(`http://localhost:5000/api/algo/`)
+            .get(`/algo/`)
             .then((res) => {
             setInputs(res.data[0].resultValues);
             console.log("THis is the result from endpoint ====>>>>",res.data[0].resultValues);
