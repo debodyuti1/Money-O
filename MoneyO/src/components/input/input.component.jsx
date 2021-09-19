@@ -3,8 +3,12 @@ import { DeleteFilled, UserAddOutlined } from "@ant-design/icons";
 import { Button } from "antd";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { useHistory } from "react-router"
+
 
 const Input = () => {
+  const history = useHistory()
+
   const [inputs, setInputs] = useState([
     { Ower: "", Amount: "", Owner: "" },
     { Ower: "", Amount: "", Owner: "" },
@@ -99,7 +103,7 @@ const Input = () => {
       .post(`/algo/`, inputs)
       .then((response) =>
         console.log("this is the response Id", response.data.id)
-      ).then(window.alert("The calculation"))
+      ).then(history.push('/Results'))
       .catch((error) => {
         console.error("There was an error! handle it", error);
       });

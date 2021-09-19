@@ -5,10 +5,12 @@ import { UserOutlined } from '@ant-design/icons';
 import line from '../../assets/resultLine.png';
 import './ResultPage.css';
 import StripeCheckoutButton from '../../components/StripeButton/StripeButton.component';
+import { useContext } from "react"
+import { AuthContext } from "../../context/AuthContext"
 
 
 const ResultPage = () => {
-
+  const {user} = useContext(AuthContext)
     const [inputs, setInputs] = useState([
         { Ower: "", Amount: "", Owner: "" },
         { Ower: "", Amount: "", Owner: "" },
@@ -75,7 +77,9 @@ const ResultPage = () => {
 
               <div className="col col-lg-2 ">
                 <p>{input.Owner}</p>
-                <StripeCheckoutButton />
+               {
+                 input.Ower === user.username ?  <StripeCheckoutButton price={input.Amount}/> : ""
+               }
                    
               </div>
 
