@@ -24,6 +24,11 @@
 <a target="_blank"> <img src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/bootstrap.svg" alt="bootstrap" width="100" height="100"/> </a>
 <a target="_blank"> <img src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/css-3.svg" alt="bootstrap" width="100" height="100"/> </a>
 <br>
+	
+## Testing
+
+Since you are only able to add valid users from the database for calculations, We have added 15 testing accounts numbered from 1-15, i.e testing<number 1-15> and recommend using these while testing the web-app. 
+Also ensure that both the people involved in the transaction are signed up.
 
 ## Clone Project
 
