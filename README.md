@@ -10,46 +10,43 @@
 ## Preview
 - Add pictures or important highlights from the Project (if any)
 - ![image]
-![image]
-![image]
-![image]
+- ![image]
+- ![image]
+- ![image]
 
-## Functionalities
-- [ ]
-- [ ]
-- [ ]
+
+<br>
+	
+## Built With
+
+- Mongodb
+- React JS
+- Node JS
+- Bootstrap
+- CSS3
 
 <br>
 
+## Clone Project
 
-## Instructions to run
-
-* Pre-requisites:
- -
- -
-
-* Directions to Install  
-```in command line
-env\scripts\activate
+```shell
+https://github.com/debodyuti1/Money-O.git
 ```
 
-* Directions to Execute
+This Command  will copy the project to your local environment
+	
 
-```bash
-env\scripts\activate
 
-```
+## Database
 
-* You can check our deployed app here
-```bash
+MongoDB used as the Database.
 
-```
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 ## Contributors
 
 <table>
 <tr align="center">
-
-
 <td>
 
 Aditya Nagar
