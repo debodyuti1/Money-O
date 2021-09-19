@@ -4,12 +4,15 @@ import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Kommunicate from '@kommunicate/kommunicate-chatbot-plugin';
+import {AuthContextProvider} from './context/AuthContext'
 
 Kommunicate.init("eebfeaf7429eb2570d023ebcffa557ea" , {"popupWidget" : true , "automaticChatOpenOnNavigation":true})
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AuthContextProvider>
+   <App />
+  </AuthContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
