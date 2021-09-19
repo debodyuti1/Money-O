@@ -1,10 +1,9 @@
 <p align="center">
 	<h2 align="center">  Money-O  </h2>
-	<h4 align="center">   Your Payment Manager<h4>
+	<h4 align="center">   Your Expense Manager<h4>
 </p>
 
 ---
-[![DOCS](https://img.shields.io/badge/Documentation-see%20docs-green?style=flat-square&logo=appveyor)]
   [![UI ](https://img.shields.io/badge/User%20Interface-Link%20to%20UI-orange?style=flat-square&logo=appveyor)]
 
 ## Preview
