@@ -1,17 +1,13 @@
 <p align="center">
-	<h2 align="center">  Money-O  </h2>
-	<h4 align="center">   Your Expense Manager<h4>
+	<h1 align="center">  Money-O  </h1>
+	<h3 align="center"> The Expense Managing Web-App</h3>
 </p>
 
----
-  [![UI ](https://img.shields.io/badge/User%20Interface-Link%20to%20UI-orange?style=flat-square&logo=appveyor)]
+  ![UI ](https://img.shields.io/badge/User%20Interface-Link%20to%20UI-orange?style=flat-square&logo=appveyor)
 
 ## Preview
-- Add pictures or important highlights from the Project (if any)
-- ![image]
-- ![image]
-- ![image]
-- ![image]
+
+![image](https://github.com/adityanagar10/paw-helper/blob/master/images/readme%20image.png)
 
 
 <br>
@@ -70,7 +66,7 @@ Aditya Nagar
 
 Advait Anand
 <p align="center">
-<img src = "https://github.com/adityanagar10/stray-helper-dog/blob/master/images/advait.jpg"  height="120" alt="Advait Anand">
+<img src = "https://github.com/adityanagar10/paw-helper/blob/master/images/Group_523.png"  height="120" alt="Advait Anand">
 </p>
 <p align="center">
 <a href = "https://github.com/Advaitanand"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
