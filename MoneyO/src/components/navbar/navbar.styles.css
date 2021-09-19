@@ -10,8 +10,10 @@ a{
     font-weight: 900;
     text-decoration: none;
     color: #fff;
+    
 }
 
 .navBarLinks{
     margin-top: 1%;
+    font-size: 18px ;
 }

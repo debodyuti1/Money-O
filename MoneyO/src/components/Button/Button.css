@@ -1,10 +1,26 @@
 .large{
-    padding: 1% 10%;
+    padding: 1.5% 7%;
     color: #000;
-    border: #000 2px none;
-    border-radius: 25px;
-    font-size:2rem;
+    border: 2px solid white;
+    border-radius: 15px;
+    font-size: 1.125rem;
     font-weight: 600;
+    background-color: white;
+    
+}
+
+.large:hover{
+    padding: 1.5% 7%;
+    color: white;
+    border:2px solid white;
+    border-radius: 15px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    background-color: transparent;
+    transition-delay: 0.2s;
+    transition-duration: 1s;
+    transition-property: background-color;
+    
 }
 
 .small{
