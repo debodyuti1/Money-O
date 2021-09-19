@@ -2,7 +2,6 @@ import "./input.styles.scss";
 import { DeleteFilled, UserAddOutlined } from "@ant-design/icons";
 import { Button } from "antd";
 import { useState, useEffect } from "react";
-import { TransactionContext } from "../../context/TransactionContext/TransactionContext";
 import axios from "axios";
 
 const Input = () => {
@@ -12,32 +11,102 @@ const Input = () => {
     { Ower: "", Amount: "", Owner: "" },
   ]);
 
+  const [Users, setUsers] = useState([]);
+
+  const [userisIn, setUserisIn] = useState(false);
+  
+
   const handleChange = (event, index) => {
     const values = [...inputs];
     values[index][event.target.name] = event.target.value;
     setInputs(values);
   };
 
-  const handleClick = (e) => {
-    e.preventDefault();
-  };
-
-
   const handleAdd = () => {
     setInputs([...inputs, { Owner: "", Amount: "", Owner: "" }]);
   };
+  
+  useEffect(() =>{
+    const fetchData = async() => {
+      await axios
+      .get("/users/data")
+      .then((res) => {
+        setUsers(res.data);
+        console.log("THis is the result from endpoint ====>>>>",res);
+      })
+      .catch((err) => console.log(err));
+    };
+    
+    fetchData();
+    
+  },[setUsers]);
+
+  console.log(Users);
+  const Compare = () => {
+
+    let compareData = [];
+    compareData = (inputs.map((input) => compareData.concat(input.Ower)));
+    console.log(compareData);
+
+    var n = Users.length;
+
+    var m = inputs.length;
+
+    var inp = [];
+    var data = [];
+    var owner = []
+
+    for(let i = 0; i < n; i++){
+      data.push(Users[i].username);
+    }
+
+    for(let i = 0; i < m; i++){
+      inp.push(inputs[i].Ower);
+      owner.push(inputs[i].Owner);
+    }
+
+
+    console.log("Inputs array: ",inp);
+    console.log("Data Array : ", data);
+    console.log("Data Array : ", owner);
+
+    for(let i = 0; i < m; i++){
+      if(data.includes(inp[i])){
+        setUserisIn(true);
+        console.log(inp[i] + " is in database.");
+      }else{
+        setUserisIn(false);
+       console.log(inp[i] + " is not in database.");
+       break;
+      }
+      if(data.includes(owner[i])){
+        console.log(owner[i] + " is in database.");
+        setUserisIn(true)
+      }else{
+        console.log(owner[i] + " is not in database.");
+        setUserisIn(false);       
+        break;
+      }
+    }
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    Compare();
+    if(userisIn){
     console.log("Inputs==>>", inputs);
     const response = axios
       .post(`/algo/`, inputs)
       .then((response) =>
         console.log("this is the response Id", response.data.id)
-      )
+      ).then(window.alert("The calculation"))
       .catch((error) => {
         console.error("There was an error! handle it", error);
       });
+    } else{
+      window.alert("User not found in database!");
+      console.log(setUserisIn);
+    }
   };
 
   const handleDelete = (index) => {

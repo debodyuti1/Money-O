@@ -1,0 +1,13 @@
+.LandingPage{
+    background: #3B3763;
+    color: #fff;
+    padding: 3% 10%;
+
+}
+
+.TitleOf{
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: #fff;    
+    overflow: hidden;
+}

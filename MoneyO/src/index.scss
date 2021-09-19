@@ -18,6 +18,17 @@
     ::-webkit-scrollbar-thumb:hover {
     background: #3B3763;
   }
+
+  ::selection {
+    color: white;
+    background: #1D1A36;
+
+  }
+
+  a{
+    text-decoration:#5A5589;
+  }
+
 }
 
 
