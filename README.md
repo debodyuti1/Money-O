@@ -110,7 +110,7 @@ Satyam Pandey
 
 <td>
 
-SHEEL PATEL
+Sheel Patel
 
 <p align="center">
 <img src = "https://github.com/Data-Science-Community-SRM/Conjexure-A-Web-App-for-Stock-Market-Forecasting/blob/620c84f290348f959b448c075168cf1d613c32d0/Images/Sheel.png"  height="120" alt="https://github.com/Data-Science-Community-SRM/Conjexure-A-Web-App-for-Stock-Market-Forecasting/blob/620c84f290348f959b448c075168cf1d613c32d0/Images/Sheel.png">
