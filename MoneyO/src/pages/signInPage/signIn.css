@@ -23,7 +23,7 @@
     padding: 5%;
     border: none;
     border-radius: 10px;
-    color: white;
+    color: black;
     background: #68629E;
 }
 .SignUpFields:focus {
@@ -33,6 +33,7 @@
 .SignInButton{
     padding: 4% 20%;
     margin-top: 4%;
+    color: black;
     border: #fff none 2px;
     font-weight: 600 ;
     border-radius: 10px;
