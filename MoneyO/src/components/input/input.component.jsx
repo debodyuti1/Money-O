@@ -56,6 +56,7 @@ const Input = () => {
               className="inp1"
               type="text"
               value={input.Ower}
+              
               onChange={(event) => handleChange(event, index)}
               placeholder={`Person `}
             ></input>

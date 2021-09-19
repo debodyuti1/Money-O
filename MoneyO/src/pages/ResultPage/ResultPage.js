@@ -1,8 +1,13 @@
 import React,{useEffect, useState} from 'react';
 import axios from 'axios';
-import { Card } from 'antd';
+import { Avatar } from 'antd';
+import { UserOutlined } from '@ant-design/icons';
+import line from '../../assets/resultLine.png';
+import './ResultPage.css';
+import StripeCheckoutButton from '../../components/StripeButton/StripeButton.component';
 
-export default function ResultPage() {
+
+const ResultPage = () => {
 
     const [inputs, setInputs] = useState([
         { Ower: "", Amount: "", Owner: "" },
@@ -29,22 +34,66 @@ export default function ResultPage() {
 
       console.log("These are the input fields =====>>>>>>", inputs);
     return (
-        <div>
-            <h1>THis is the results page</h1>
+      <div className = "ProfilePage">
+      <div className="container">
+      <div className="row">
+        <h1>Time to settle up!</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
+      </div>
 
-            <div className="row p-2" >
-            {inputs && inputs.map((input, index) => 
-                (
-                    <Card title="Default size card" style={{ width: 300 }}>
-                    <p>This is the Ower: {input.Ower}</p>
-                    <p>Amount: {input.Owner}</p>
-                    <p>This is the Owner: {input.Owner}</p>
-                    </Card>
-                )
-            )}
-            </div>
-           
-            {/* {data} */}
-        </div>
+      <div className="container row">
+        {
+          inputs && inputs.map((input) => 
+          (
+            <div className="row p-2 ms-2">
+              <div className="col col-lg-2">
+                <Avatar 
+                style={{ backgroundColor: '#A099DA' }} 
+                icon={<UserOutlined />}
+                size={{ xs: 24, sm: 32, md: 40, lg: 64, xl: 80, xxl: 100 }}>
+                </Avatar>
+              </div>
+
+              <div className="col col-lg-2">
+                <p>{input.Ower}</p>
+                   
+                <p style={{color: 'red'}}>-Rs. {input.Amount}</p>
+              </div>
+
+              <div className="col col-lg-4">
+                <img src={line} alt="line"></img>
+              </div>
+
+              <div className="col col-lg-2">
+              <Avatar 
+                style={{ backgroundColor: '#A099DA' }} 
+                icon={<UserOutlined />}
+                size={{ xs: 24, sm: 32, md: 40, lg: 64, xl: 80, xxl: 100 }}>
+
+                </Avatar>
+              </div>
+
+              <div className="col col-lg-2 ">
+                <p>{input.Owner}</p>
+                <StripeCheckoutButton />
+                   
+              </div>
+
+              
+              </div>
+
+
+          ))
+        }
+        
+      </div>
+      </div>
+
+     
+
+      </div>
     )
 };
+
+
+export default ResultPage;
