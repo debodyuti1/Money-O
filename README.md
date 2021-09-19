@@ -49,6 +49,65 @@ env\scripts\activate
 <table>
 <tr align="center">
 
+
+<td>
+
+Aditya Nagar
+
+<p align="center">
+<img src = "https://github.com/adityanagar10/paw-helper/blob/master/images/Nagar.jpg"  height="120" alt="Aditya Nagar">
+</p>
+<p align="center">
+<a href = "https://github.com/adityanagar10"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
+<a href = "https://www.linkedin.com/in/aditya-nagar-b33876114/">
+<img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
+</a>
+</p>
+</td>
+
+
+<td>
+
+Advait Anand
+<p align="center">
+<img src = "https://github.com/adityanagar10/stray-helper-dog/blob/master/images/advait.jpg"  height="120" alt="Advait Anand">
+</p>
+<p align="center">
+<a href = "https://github.com/Advaitanand"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
+<a href = "https://www.linkedin.com/in/advait-anand-02a563154/">
+<img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
+</a>
+</p>
+</td>
+
+
+<td>
+
+Debodyuti Biswas
+<p align="center">
+<img src = "https://github.com/adityanagar10/stray-helper-dog/blob/master/images/Debodyuti.jpeg"  height="120" alt="Debodyuti Biswas">
+</p>
+<p align="center">
+<a href = "https://github.com/debodyuti1"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
+<a href = "https://www.linkedin.com/in/debodyuti-biswas-8172881aa/">
+<img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
+</a>
+</p>
+</td>
+<td>
+
+Satyam Pandey
+<p align="center">
+<img src = "https://github.com/adityanagar10/paw-helper/blob/master/images/Satyam.jfif"  height="120" alt="Advait Anand">
+</p>
+<p align="center">
+<a href = "https://github.com/satyam720"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
+<a href = "https://www.linkedin.com/in/satyam-pandey-8636001b0/">
+<img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
+</a>
+</p>
+</td>
+
 <td>
 
 SHEEL PATEL
@@ -63,8 +122,6 @@ SHEEL PATEL
 </a>
 </p>
 </td>
-
-
 
 
 </tr>
